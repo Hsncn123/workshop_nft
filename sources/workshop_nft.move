@@ -33,3 +33,14 @@ public entry fun mint(
     };
     transfer::public_transfer(nft, sender);
 }
+
+public entry fun transfer(nft: NFT, recipient: address, _: &mut TxContext)
+{
+    transfer::public_transfer( nft, recipient);
+}
+
+
+
+
+
+
